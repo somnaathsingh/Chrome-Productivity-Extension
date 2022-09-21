@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            width: 300px;
+            background-color: #CCF2F4;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="text-decoration-none">
+        <div style="height: 40px; background-color: #F4F9F9;">
+            <h1 class="text-center align-middle fw-normal text-dark "">PRODUCTIVITY++</h1>
+        </div>
+    </a>
+    <div class=" container">
+                <br>
+                <h2 class="fs-3 fw-normal text-center">Block Browser</h2>
+                <br>
+
+                <form action="" class=" browserForm">
+                    <h3 class="fs-5 fw-normal text-center">Block Browser After :</h3>
+                    <div class="blockBrowserTime">
+                        <div class="row"> 
+                            <div class="col-4">
+                                <label for="hour" class="form-label">HOUR</label>
+                            </div>
+                            <div class="col-4">
+                                <label for="min" class="form-label">MIN</label>
+                            </div>
+                            <div class="col-4">
+                                <label for="sec" class="form-label">SEC</label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="number" name="hour" id="hour_1" class="form-control" value="0">
+                            </div>
+                            <div class="col-4">
+                                <input type="number" name="min" id="min_1" class="form-control" value="0">
+                            </div>
+                            <div class="col-4">
+                                <input type="number" name="sec" id="sec_1" class="form-control" value="0">
+                            </div>
+
+                        </div>
+                   
+                    </div>
+                    <br>
+                    <div class="unlockBrowserTime">
+                        <h3 class="fs-5 fw-normal text-center">Unlock Browser After :</h3>
+                        <div class="row"> 
+                            <div class="col-4">
+                                <label for="hour" class="form-label">HOUR</label>
+                            </div>
+                            <div class="col-4">
+                                <label for="min" class="form-label">MIN</label>
+                            </div>
+                            <div class="col-4">
+                                <label for="sec" class="form-label">SEC</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="number" name="hour" id="hour_0" class="form-control" value="0">
+                            </div>
+                            <div class="col-4">
+                                <input type="number" name="min" id="min_0" class="form-control" value="0">
+                            </div>
+                            <div class="col-4">
+                                <input type="number" name="sec" id="sec_0" class="form-control" value="0">
+                            </div>
+
+                        </div>
+                       
+                        <br>
+                        <input type="submit" id="button1" class="form-control btn btn-primary" value="START">
+                    </div>
+
+                </form>
+                <p class="blockcountdown"></p>
+                <br>
+                <p class="unlockcountdown"></p>
+                <br>
+                <input type="button" value="RESET" class="reset btn btn-warning" style="display: none; margin-bottom: 10px;">
+
+
+
+                <script src="../HTML-js/blockBrowser/currentstate_timer.js"></script>
+                <script src="../HTML-js/blockBrowser/eventListener.js"></script>
+                <script src="../HTML-js/blockBrowser/timer.js"></script>
+        </div>
+</body>
+
+</html>

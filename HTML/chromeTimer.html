@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: auto;
+            background-color: #CCF2F4;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            outline: none;
+        }
+
+        #timeTable {
+            width: 660px;
+            border: 1px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <a href="../index.html" class="text-decoration-none">
+        <div style="height: 40px; background-color: #F4F9F9; padding: 10px;">
+            <h1 class="text-center align-middle fw-normal text-dark "">PRODUCTIVITY++</h1>
+        </div>
+    </a>
+    <div class=" container" >
+                <br>
+                <h2 class="fs-3 fw-normal text-center" >Chrome Timer</h2>
+                <br>
+                <div id="timeTableDiv">
+                    <table class="timeTable table">
+
+                    </table>
+
+                </div>
+                <div class="errorMessage"></div>
+
+                <div class="row justify-content-center">
+                    <div class="col-6" >
+                        <button class="btnShowTable btn btn-primary text-wrap fs-6 fw-normal badge">Laod Times</button>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    
+                    <div class="col-6">
+                        <button class="btnClearTimes btn btn-warning text-wrap fs-6 fw-normal badge">Clear Times</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+
+                <script src="../HTML-js/chromeTimer/chromeTimer.js"></script>
+    </div>
+
+
+</body>
+
+</html>

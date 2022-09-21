@@ -1,0 +1,1 @@
+//content is shifted to background/alarm.js
